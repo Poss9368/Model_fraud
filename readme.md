@@ -8,3 +8,6 @@ packages:
 - pandas
 - colorama
 - multiprocessing
+
+## Results
+- data/result/result_log.csv: a log file that contains the results of the model
