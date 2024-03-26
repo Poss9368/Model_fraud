@@ -14,6 +14,10 @@ def data_report(df):
         print(" {}:\n  Fraudulentas: {} -- Total: {} -- Porcentaje: {}%".format(tipo, total_fraudes, total_transacciones, total_fraudes/total_transacciones*100)) 
         print("\n")
         
+    ## contar valores unicos en df['clienteOrigen']}
+    print(len(df['clienteOrigen'].value_counts()))
+    print(len(df['destinatarioID'].value_counts()))
+        
     
 if __name__ == '__main__':
     # Load the data

@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # Load and prepare the data
     print('Loading and preparing the data...')
     DATABASE_PATH = 'data/model_fraud.csv'
-    df = load_data(DATABASE_PATH, n_rows=100000)
+    df = load_data(DATABASE_PATH, n_rows=10000000)
     
     ############################################################
     # Run the algorithm
@@ -28,7 +28,7 @@ if __name__ == '__main__':
     ############################################################
     # Save the data
     print('Saving the data...')
-    SAVE_PATH = 'data/model_fraud_with_proyected_fraud.csv'
+    SAVE_PATH = 'data/result/model_fraud_with_proyected_fraud.csv'
     save_data(df, SAVE_PATH)
     
     toc = time.time()
